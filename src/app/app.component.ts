@@ -7,22 +7,28 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  // String Interpolation
-  title = 'blog';
+  title='blog';
 
-  // Event Binding
-  showData(){
-  alert("anshu")
-  }
+//   // String Interpolation
+//   title = 'blog';
 
-// Property Binding
-hrefValue="https://google.com"
+//   // Event Bindingng serve
+//   showData(){
+//   alert("anshu")
+//   }
 
-// Attribute Binding
-updatelink="https://godaddy.com"
+// // Property Binding
+// hrefValue="https://google.com"
 
-// Class Binding
-// title="blog";
+// // Attribute Binding
+// updatelink="https://godaddy.com"
 
-name:any;
+// // Class Binding
+// // title="blog";
+
+// name:any;
+
+
+name: string = 'Peter';
+
 }

@@ -1,0 +1,39 @@
+<p>test works!</p>
+<br>
+<div *ngIf="true">display anshu</div>
+<br>
+<p>ngIfElse example!</p> 
+<br>
+<div *ngIf="isLogIn; else isLogOut"> 
+   Hello you are logged in 
+</div>
+<ng-template #isLogOut> 
+   You're logged out.. 
+</ng-template>
+
+<ul>
+    <li *ngFor="let list of list" appRedEl >
+        {{list}}
+    </li>
+</ul>
+
+ <ul [ngSwitch]="loginName">
+    <li *ngSwitchCase="'user'">
+        <p>user is logged in...</p>
+    </li>
+    <li *ngSwitchCase="'admin'">
+        <p>admin is logged in...</p>
+    </li>
+    <li *ngSwitchDefault>
+        <p>please choose login name...</p>
+    </li>
+</ul> 
+
+<div [ngClass]="{'one':false,'two':true}">
+    learning ngClass
+</div>
+
+
+<h1>hi{{userName}}</h1>
+
+
