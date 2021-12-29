@@ -1,0 +1,36 @@
+<p>eg-binding works!</p>
+
+Emp1=[name:"anshu",empid:70185,mobile no:7380825958]
+<br>
+Emp2=[name:"rajarsh",empid:70186,mobile no:7380825958]
+<br>
+Emp3=[name:"shivam",empid:70187,mobile no:7380825958]
+<br>
+<br>
+<br>
+<br>
+
+<table class="table">
+   <tr>
+      <td class="text-success">EMP_ID</td>
+      <td class="text-success">NAME</td>
+      <td class="text-success">AGE</td>
+
+   </tr>
+
+   <tr *ngFor="let obj of emp">
+      <td>{{obj.empId}}</td>
+      <td>{{obj.name}}</td>
+      <td *ngIf="obj.age > 26 ; else elseBlockShow" class="text-danger">{{obj.age}}</td> 
+       <td>
+         <ng-template #elseBlockShow>
+            <span class="text-sucess"> {{obj.age}}</span>
+          </ng-template>
+      </td> 
+      <button class="btn-warning" [disabled]="isdisabled" (click)="onclick(obj)">view</button>
+
+   </tr>
+</table>
+
+<!-- <td [ngStyle]="{'color' : obj.age > 21  ? 'red':'green'}">{{obj.age}}</td>  ngstyle directive-->
+

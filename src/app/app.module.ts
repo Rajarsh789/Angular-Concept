@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import{FormsModule} from '@angular/forms';
 import { RedElDirective } from './red-el.directive';
 import { TestComponent } from './test/test.component';
+import { EgBindingComponent } from './eg-binding/eg-binding.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { TestComponent } from './test/test.component';
     AppComponent,
     RedElDirective,
     TestComponent,
+    EgBindingComponent,
     
   ],
   imports: [
